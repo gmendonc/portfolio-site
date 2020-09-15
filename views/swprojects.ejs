@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<h1>Software Projects</h1>
+
+<a href="/swprojects/new">Add a New Project</a>
+
+<% swprojects.forEach(function(swprojects){ %>
+    <div>
+        <h4><%= swprojects.name %></h4>
+        <img src="<%= swprojects.image %>"
+    </div>
+<% }) %>
+
+<%- include("partials/footer") %>

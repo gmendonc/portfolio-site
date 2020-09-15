@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<h1>Create a New Software Project</h1>
+
+<form action="/swprojects" method="POST">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="image" placeholder="Image Url">
+    <button>Submit</button>
+</form>
+
+<a href="/swprojects">Go Back</a>
+<%- include("partials/footer") %>
